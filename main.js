@@ -28,9 +28,9 @@ Auto.prototype.printInfo = function () {
    console.log("The auto brand " + this.brand + " its price is " + this.price + " capacitance " + this.capacitance + " l.")
 }
 
-var bmw = new Auto("BMW", 170000, 4)
-var audi = new Auto("Audi", 140000, 2)
-var mercedes = new Auto("Mercedes", 150000, 2)
+var bmw = new Auto("BMW", 170000, 4),
+    audi = new Auto("Audi", 140000, 2),
+    mercedes = new Auto("Mercedes", 150000, 2);
 
 bmw.printInfo();
 audi.printInfo();
