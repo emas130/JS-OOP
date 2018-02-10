@@ -17,3 +17,21 @@ var iPhone6S = new Phone("Apple", 2250, "silver"),
 iPhone6S.printInfo();
 samsungS6.printInfo();
 onePlus.printInfo();
+
+function Auto(marka, cena, pojemnosc) {
+   this.marka = marka;
+   this.cena = cena;
+   this.pojemnosc = pojemnosc;
+}
+
+Auto.prototype.printInfo = function () {
+   console.log("The auto brand " + this.marka + " its price is " + this.cena + " capacitance " + this.pojemnosc + " litry.")
+}
+
+var bmw = new Auto("BMW", 170000, 4)
+var audi = new Auto("Audi", 140000, 2)
+var mercedes = new Auto("Mercedes", 150000, 2)
+
+bmw.printInfo();
+audi.printInfo();
+mercedes.printInfo();
