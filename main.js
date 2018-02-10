@@ -18,14 +18,14 @@ iPhone6S.printInfo();
 samsungS6.printInfo();
 onePlus.printInfo();
 
-function Auto(marka, cena, pojemnosc) {
-   this.marka = marka;
-   this.cena = cena;
-   this.pojemnosc = pojemnosc;
+function Auto(brand, price, capacitance) {
+   this.brand = brand;
+   this.price = price;
+   this.capacitance = capacitance;
 }
 
 Auto.prototype.printInfo = function () {
-   console.log("The auto brand " + this.marka + " its price is " + this.cena + " capacitance " + this.pojemnosc + " litry.")
+   console.log("The auto brand " + this.brand + " its price is " + this.price + " capacitance " + this.capacitance + " l.")
 }
 
 var bmw = new Auto("BMW", 170000, 4)
